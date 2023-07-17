@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cssLogin.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+    
+    
+    <title>Login</title>
+    
+</head>
+<body>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">   
+                <h2>Bienvenido a Decoraciones Lina Tabares</h2>
+                <p>Puedes iniciar sesion si ya cuentas con una si no registrate</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+                <p>Vuelve al Inicio si Deseas</p>
+                <input type="submit" value="Inicio" onclick="redirectToHome()">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs" >
+                <h2>Registrarse</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-twitter' ></i>
+                </div>
+                <p>o usa tu email para registrarte</p>
+                <form class="form" id="msformRegistro">
+                    <label>
+                        <i class='bx bxs-user'></i>
+                        <select class="styled-select">
+                            <option value="" disabled selected>Selecione Documento</option>
+                            <option value="1">C.C</option>
+                            <option value="2">C.E</option>
+                            <option value="3">T.I</option>
+                        </select>                    
+                    </label>                    
+                    <label>
+                        <i class='bx bxs-user'></i>
+                        <input type="numer" id="documentoRegistro" placeholder="Documento">
+                    </label>
+                    <label>
+                        <i class='bx bxs-user'></i>
+                        <input type="text" id="nombreRegistro" placeholder="Nombres Completos">
+                    </label>
+                    <label>
+                        <i class='bx bxs-phone'></i>
+                        <input type="tel" id="telefonoRegistro" placeholder="Telefono Celular">
+                    </label>
+                    <label>
+                        <i class='bx bxs-envelope' ></i>
+                        <input type="email" id="correoRegistro" placeholder="Correo Electronico">
+                    </label>
+                    <label>
+                        <i class='bx bxs-lock-alt' ></i>
+                        <input type="password" id="contrasenaRegistro" placeholder="Ingrese Contraseña">
+                    </label>
+                    <label>
+                        <i class='bx bxs-lock-alt' ></i>
+                        <input type="password" id="confirmarRegistro" placeholder="Confirmar Contraseña">
+                    </label>
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">   
+                <h2>Bienvenido Decoraciones Lina Tabares</h2>
+                <p>Puedes Registrarte si aun no cuentas con una</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-twitter' ></i>
+                </div>
+                <p>Iniciar Sesión con una Cuenta</p>
+                <form class="form" id="msform">
+                    <label>
+                        <i class='bx bxs-envelope' ></i>
+                        <input type="number" id="documento" placeholder="Numero Documento">
+                    </label>
+                    <label>
+                        <i class='bx bxs-lock-alt' ></i>
+                        <input type="password" id="contrasena" placeholder="Ingrese Contraseña">
+                    </label>
+                    <input type="submit" value="Iniciar Sesión">
+                    <input type="button" value="Recuperar Contraseña" id="btnRecuperar">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-form recuperar hide">
+        <div class="information">
+            <div class="info-childs">   
+                <h2>Bienvenido a Decoraciones Lina Tabares</h2>
+                <p>Puedes iniciar sesion si ya cuentas con una si no registrate</p>
+                <input type="button" value="Iniciar Sesión" id="recuperar-iniciar">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-twitter' ></i>
+                </div>
+                <h2>¿No puedes iniciar sesión?</h2>
+                <p>Para restablecer la clave, 
+                    ingresa Los Siguientes Datos.</p>
+                <form class="form" id="msformRecuperar">
+                    <label>
+                        <i class='bx bxs-envelope' ></i>
+                        <input type="number" id="documentoRecuperar" placeholder="Numero Documento">
+                    </label>
+                    <input type="submit" value="Recuperar Contraseña">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<script src="/js/scriptLogin.js"></script>
+</body>
+</html>

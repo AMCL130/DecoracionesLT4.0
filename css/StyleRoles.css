@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap');
+
+
+* {
+
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+  }
+
+#productGeneral{
+    margin: 5%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.btnEditarRoles{
+    background-color: #773ed3;
+}
+.btnEstadoRoles{
+    background-color: #501f9e;
+}
+
+.btnEliminarRoles{
+    background-color: #3e0699;
+}

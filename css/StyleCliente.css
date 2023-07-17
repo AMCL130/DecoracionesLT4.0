@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap');
+
+
+* {
+
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+  }
+
+#productGeneral{
+    margin: 5%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.btnDetalleCliente{
+    background-color: #8c6bc2;
+    padding-top: 6.5px;
+    border-color: #6222CC;
+}
+.btnEditarCliente{
+    background-color: #773ed3;
+}
+.btnEstadoCliente{
+    background-color: #501f9e;
+}
+
+.btnEliminarCliente{
+    background-color: #3e0699;
+}

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@500&display=swap');
+
+
+* {
+
+  box-sizing: border-box;
+  font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.header-productos{
+    background-color: #F0A83E;
+}
+
+.h1-productos{
+    margin-top: 10%;
+    color: black;
+    margin-left: 40%;
+}
+
+#container-productoUno{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ProductoUno{
+    border: 1px rgba(0, 0, 0, 0.378) solid;
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ProductoUno p{
+    color: #0a0a0a;
+    font-size: 105%;
+}
+
+.ProductoDos p{
+    color: #0e0d0d;
+    font-size: 105%;
+}
+
+.ProductoDos{
+    border: 1px rgba(0, 0, 0, 0.378) solid;
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    margin: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.btnlistarEditar{
+    background-color: #773ed3;
+}
+.btnlistarEliminar{
+    background-color: #3e0699;
+}
+
+.btnlistar{
+    background-color: #501f9e;
+}
+
+
+#productGeneral{
+    margin: 5%;
+}
+
+.btnlistarcrear{
+    background-color: #6222CC;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.containerlistar{
+    margin-top: 0%;
+}
+
+.titulo{
+    margin-left: 45%;
+    margin-bottom: 5%;
+}
+
+.btnlistarExcel{
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+
+.card-title{
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.card-text text-right{
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
