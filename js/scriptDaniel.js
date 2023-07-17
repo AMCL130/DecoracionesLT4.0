@@ -11,34 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  document.getElementById("cancelar").addEventListener("click", function() {
-    if (confirm("¿Está seguro de cancelar el evento?")) {
-        // Código a ejecutar si la respuesta es "sí"
-        console.log("El usuario ha confirmado la cancelación del evento.");
-    } else {
-        // Código a ejecutar si la respuesta es "no"
-        console.log("El usuario ha cancelado la acción de cancelar el evento.");
-    }
-});
-document.getElementById("cancelar2").addEventListener("click", function() {
-  if (confirm("¿Está seguro de cancelar el evento?")) {
-      // Código a ejecutar si la respuesta es "sí"
-      console.log("El usuario ha confirmado la cancelación del evento.");
-  } else {
-      // Código a ejecutar si la respuesta es "no"
-      console.log("El usuario ha cancelado la acción de cancelar el evento.");
-  }
-});
+  
 
-function confirmarEliminar() {
-  if (confirm("¿Está seguro de que desea eliminar?")) {
-    // Aquí puedes agregar tu lógica para realizar la eliminación
-    console.log("Se ha confirmado la eliminación.");
-  } else {
-    // Aquí puedes agregar tu lógica si el usuario cancela la eliminación
-    console.log("Se ha cancelado la eliminación.");
-  }
-}
+
 
 
 
@@ -166,4 +141,40 @@ function guardarEdicion3() {
 
   
         
-            
+function mostrarConfirmacionCancelar() {
+  Swal.fire({
+    title: '¿Estás seguro de cancelar?',
+    text: 'Esta acción no se puede deshacer',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#6222CC',
+    cancelButtonColor: '#FBA504',
+    confirmButtonText: 'Sí, cancelar',
+    cancelButtonText: 'Cancelar'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire('Cancelado', 'El elemento ha sido cancelado', 'success');
+    } else {
+      Swal.fire('Cancelado', 'La accion ha sido cancelada', 'info');
+    }
+  });
+}
+
+function confirmacionEliminarProducto() {
+  Swal.fire({
+    title: '¿Estás seguro de eliminar producto?',
+    text: 'Esta acción no se puede deshacer',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#6222CC',
+    cancelButtonColor: '#FBA504',
+    confirmButtonText: 'Sí, eliminar',
+    cancelButtonText: 'Cancelar'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire('Eliminado', 'El elemento ha sido Eliminado', 'success');
+    } else {
+      Swal.fire('Cancelado', 'La accion ha sido cancelada', 'info');
+    }
+  });
+}
